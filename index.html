@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Globe</title>
+    <!-- <script src="//unpkg.com/globe.gl"></script>
+    <script src="//unpkg.com/d3"></script> -->
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="//unpkg.com/d3"></script>
+    <script src="//unpkg.com/globe.gl"></script>
+    <script src="//unpkg.com/polished@3.5.2/dist/polished.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body onload="basicGlobe()">
+    <div class="main-container">
+      <div class="title-bar">
+        <h1>THE 3D GLOBE</h1>
+      </div>
+      <div class="main-bar">
+        <div class="side-content">
+          <div class="side-bar" id="basicGlobe"><i class="fa fa-globe" aria-hidden="true"></i><p>Basic Globe</p></div>
+          <div class="side-bar" id="choropleth"><i class="fa fa-globe" aria-hidden="true"></i><p>choropleth</p></div>
+          <div class="side-bar" id="clouds"><i class="fa fa-globe" aria-hidden="true"></i><p>clouds</p></div>
+          <div class="side-bar" id="custom"><i class="fa fa-globe" aria-hidden="true"></i><p>custom</p></div>
+          <div class="side-bar" id="customlayer"><i class="fa fa-globe" aria-hidden="true"></i><p>customlayer</p></div>
+          <div class="side-bar" id="earthShield"><i class="fa fa-globe" aria-hidden="true"></i><p>earthShield</p></div>
+          <div class="side-bar" id="earthquakes"><i class="fa fa-globe" aria-hidden="true"></i><p>earthquakes</p></div>
+          <div class="side-bar" id="emitArcs"><i class="fa fa-globe" aria-hidden="true"></i><p>emitArcs</p></div>
+          <div class="side-bar" id="heatmaps"><i class="fa fa-globe" aria-hidden="true"></i><p>heatmaps</p></div>
+          <div class="side-bar" id="hexedPolygons"><i class="fa fa-globe" aria-hidden="true"></i><p>hexedPolygons</p></div>
+          <div class="side-bar" id="hollowGlobe"><i class="fa fa-globe" aria-hidden="true"></i><p>hollowGlobe</p></div>
+          <div class="side-bar" id="htmlMarkers"><i class="fa fa-globe" aria-hidden="true"></i><p>htmlMarkers</p></div>
+          <div class="side-bar" id="moonLandingSites"><i class="fa fa-globe" aria-hidden="true"></i><p>moonLandingSites</p></div>
+          <div class="side-bar" id="populationHeatmap"><i class="fa fa-globe" aria-hidden="true"></i><p>populationHeatmap</p></div>
+          <div class="side-bar" id="randomArcs"><i class="fa fa-globe" aria-hidden="true"></i><p>randomArcs</p></div>
+          <div class="side-bar" id="randomPaths"><i class="fa fa-globe" aria-hidden="true"></i><p>randomPaths</p></div>
+          <div class="side-bar" id="randomRings"><i class="fa fa-globe" aria-hidden="true"></i><p>randomRings</p></div>
+          <div class="side-bar" id="satellites"><i class="fa fa-globe" aria-hidden="true"></i><p>satellites</p></div>
+          <div class="side-bar" id="solarTerminator"><i class="fa fa-globe" aria-hidden="true"></i><p>solarTerminator</p></div>
+          <div class="side-bar" id="submarineCables"><i class="fa fa-globe" aria-hidden="true"></i><p>submarineCables</p></div>
+          <div class="side-bar" id="tiles"><i class="fa fa-globe" aria-hidden="true"></i><p>tiles</p></div>
+          <div class="side-bar" id="worldVolcanoHeatmap"><i class="fa fa-globe" aria-hidden="true"></i><p>worldVolcanoHeatmap</p></div>
+          <div class="side-bar" id="volcanoes"><i class="fa fa-globe" aria-hidden="true"></i><p>volcanoes</p></div>
+          <div class="side-bar" id="worldCities"><i class="fa fa-globe" aria-hidden="true"></i><p>worldCities</p></div>
+          <div class="side-bar" id="worldPopulation"><i class="fa fa-globe" aria-hidden="true"></i><p>worldPopulation</p></div>
+        </div>
+        <div class="main-content">
+          <div id="visualize"></div>
+          
+        </div>
+      </div>
+    </div>
+ 
+    <div id="main">
+
+    </div>
+    
+    <script src="./src/js/main.js">
+    </script>
+  </body>
+</html>
