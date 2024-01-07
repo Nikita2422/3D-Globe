@@ -670,6 +670,28 @@ function worldPopulation() {
     world.controls().autoRotateSpeed = 0.6;
 }
 
+// var navContainer = document.getElementById("side-content");
+
+// // Get all buttons with class="btn" inside the container
+// var navs = navContainer.getElementsByClassName("side-bar");
+
+// // Loop through the buttons and add the active class to the current/clicked button
+// for (var i = 0; i < navs.length; i++) {
+//   navs[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+const callToActionBtns = document.querySelectorAll(".side-content");
+
+callToActionBtns.forEach((btn) => {
+   btn.addEventListener("click", (e) => {
+    const currentBtn =
+      e.target.parentElement.querySelector("side-bar");
+    currentBtn.classList.toggle("active");
+  });
+});
 
 
 document.getElementById("basicGlobe").onclick = function() {basicGlobe()};
